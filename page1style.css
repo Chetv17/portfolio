@@ -1,0 +1,30 @@
+
+
+/* ALL FOREGROUND ITEMS! */
+
+body {
+  background: lightgrey;
+  display: flex;
+}
+  .headerfg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95px;
+    border: 1px solid red;
+    z-index: +1;
+  }
+
+
+/* background drop shadow boxes */
+.background {
+  display: flex;
+}
+  .headerbg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-left: -5px; 
+    border: 1px solid blue;
+  }
