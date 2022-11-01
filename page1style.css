@@ -28,12 +28,14 @@ main {
 
 .middle {
   display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
 
 
 }
 
   .links {
-    margin-top: 140px;
+    /* Not necessary? */
   }
 
    .linksbg {
@@ -49,11 +51,71 @@ main {
   }
 
 .photolinks {
-   margin-top: 140px;
+   /* Not necessary? */
 }
 
-  .carousel {
-    width: 400px;
-    height: 400px;
+  .carouselbg {
+    width: 505px;
+    height: 267px;
     border: 1px solid red;
   }
+
+  .carouselfg {
+    width: 500px;
+    height: 262px;
+    border: 1px solid blue;
+  }
+
+.webpagelinks {
+ margin-top: 40px;
+}
+
+  .link_1_bg {
+
+    width: 505px;
+    height: 55px;
+    border: 1px solid red;
+  }
+
+  .link_1_fg {
+
+    width: 500px;
+    height: 50px;
+    border: 1px solid blue;
+  }
+
+.webpagelinks2 {
+ margin-top: 40px;
+}
+
+  .link_2_bg {
+
+    width: 505px;
+    height: 55px;
+    border: 1px solid red;
+  }
+
+  .link_2_fg {
+
+    width: 500px;
+    height: 50px;
+    border: 1px solid blue;
+  }
+
+  .webpagelinks3 {
+   margin-top: 40px;
+  }
+
+    .link_3_bg {
+
+      width: 505px;
+      height: 55px;
+      border: 1px solid red;
+    }
+
+    .link_3_fg {
+
+      width: 500px;
+      height: 50px;
+      border: 1px solid blue;
+    }
