@@ -6,7 +6,8 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-
+  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background-blend-mode: darken;
   color: #2b1f05;
 
 
@@ -136,6 +137,7 @@ a:hover {
   text-align: center;
   list-style: none;
   font-weight: bold;
+  padding-top: 40px;
 }
 
 #modalh2 {
