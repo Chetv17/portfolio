@@ -1,10 +1,16 @@
 
 
+@font-face {
+  font-family: NationalPark;
+  src: url('NationalPark-VariableVF.woff');
+}
+
 /* ALL FOREGROUND ITEMS! */
 
 body {
   background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FBFF4F);
   background-blend-mode: darken;
+  font-family: NationalPark;
   color: #f0f0f2;
 
 }
@@ -17,12 +23,18 @@ main {
 /* HEADER SECTION OF PAGE */
 
 h1 {
+  font-size: 50px;
+
   text-align: center;
   padding-top: 5px;
+  margin-bottom: 0;
 }
 
 h2 {
+  font-size: 20px;
+  font-weight: normal;
   text-align: center;
+  margin-top: 0;
 
 }
 
@@ -187,7 +199,7 @@ h3:hover {
 /* FOOTER SECTION OF PAGE */
 
 button {
-  font-family: serif;
+  font-family: NationalPark;
   font-size: 1em;
   color: #f0f0f2;
   text-decoration: none;
@@ -239,14 +251,15 @@ button:hover {
     text-align: center;
     list-style: none;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   #modalh2 {
     text-align: center;
     font-weight: bold;
-    padding-top: 40px;
-    color: #2b1f05;
+    padding-top: 50px;
+    color: #f0f0f2;
+    font-size: 52px;
   }
 
   #contactModal {
