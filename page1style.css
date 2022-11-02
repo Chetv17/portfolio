@@ -24,6 +24,10 @@ h2 {
   text-align: center;
 }
 
+a {
+  color: #2b1f05;
+  text-decoration: none;  
+}
 
   .headerbg {
     background: rgb(73, 93, 78, .5);
@@ -50,6 +54,8 @@ h2 {
   justify-content: space-around;
   margin-top: 100px;
 }
+
+/* LEFT OUTSIDE LINKS DASHBOARD */
 
 #dash {
   text-align: center;
@@ -81,6 +87,8 @@ h2 {
 
   }
 
+/* RIGHT SIDE PHOTO CAROUSEL */
+
 .photolinks {
    /* Not necessary? */
 }
@@ -98,6 +106,8 @@ h2 {
     height: 262px;
 
   }
+
+/* MAIN NAV LINKS */
 
 .main_links {
   text-align: center;
@@ -199,5 +209,49 @@ h2 {
    width: 99%;
    height: 30px;
    border-radius: 25px;
+
+  }
+
+
+/* MEDIA QUERY RESPONSIVE DESIGN */
+
+  @media (max-width: 693px) {
+    .middle {
+      display: flex;
+      flex-direction: column;
+    }
+    .links {
+      align-self: center;
+      margin-bottom: 30px;
+    }
+    .carouselbg {
+      width: 445px;
+      height: 280px;
+    }
+    .carouselfg {
+      width: 440px;
+      height: 275px;
+    }
+    .link_1_bg {
+      width: 445px;
+    }
+    .link_1_fg {
+      width: 440px;
+    }
+    .link_2_bg {
+      width: 445px;
+    }
+    .link_2_fg {
+      width: 440px;
+    }
+    .link_3_bg {
+      width: 445px;
+    }
+    .link_3_fg {
+      width: 440px;
+    }
+    .nav {
+      padding-right: 10px;
+    }
 
   }
