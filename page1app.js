@@ -1,6 +1,11 @@
 
 $(() => {
 
+  const $openBtn = $('#openModal');
+  const $modal = $('#contactModal');
+  const $closeBtn = $('#close');
+
+
 
 
 
@@ -23,7 +28,13 @@ $(() => {
 
 ///////////////
 
+const openModal = () => {
+$modal.css('display', 'block');
+}
 
+const closeModal = () => {
+$modal.css('display', 'none');
+}
 
 
 
@@ -38,6 +49,8 @@ $('#headerClick').on('click', navigateHome);
 $('#aboutMeClick').on('click', navigateAboutMe);
 $('#resumeClick').on('click', navigateResume);
 $('#projectsClick').on('click', navigateProjects);
+$openBtn.on('click', openModal);
+$closeBtn.on('click', closeModal);
 
 ///////// HOVER-OVER LISTENERS //////////
 

@@ -3,7 +3,8 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-  background-image: linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background-blend-mode: darken;
   color: #2b1f05;
 
 }
@@ -184,6 +185,20 @@ h3:hover {
 
 /* FOOTER SECTION OF PAGE */
 
+button {
+  font-family: serif;
+  font-size: 1em;
+  color: #2b1f05;
+  text-decoration: none;
+  border: none;
+  background: ivory;
+}
+
+button:hover {
+  color: #FBFF4F;
+}
+
+
 #foot_nav {
   list-style: none;
   text-align: center;
@@ -219,6 +234,48 @@ h3:hover {
 
   }
 
+  #contactList {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  #modalh2 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40px;
+    color: #2b1f05;
+  }
+
+  #contactModal {
+    background-color: rgba(0,0,0,0.4);
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	z-index: 1;
+  	overflow: auto;
+  	display: none;
+  }
+    #modalContent {
+      background-image: url('modalsign.jpg');
+    	height: 350px;
+    	width: 550px;
+    	border-radius: 2px;
+    	margin: 150px auto;
+    	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+    }
+
+  #credit {
+    color: ivory;
+    text-align: right;
+  }
+
+  .name {
+    color: ivory;
+  }
 
 /* MEDIA QUERY RESPONSIVE DESIGN */
 
