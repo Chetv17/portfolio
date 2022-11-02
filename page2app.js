@@ -1,4 +1,40 @@
+
+
 $(() => {
+
+///////// CLICK FUNCTIONS /////////
+
+const $openBtn = $('#openModal');
+const $modal = $('#contactModal');
+const $closeBtn = $('#close');
+
+
+
+    const navigateHome = () => {
+      alert('works!')
+    }
+
+
+
+
+
+    const openModal = () => {
+  $modal.css('display', 'block');
+}
+
+const closeModal = () => {
+  $modal.css('display', 'none');
+}
+
+
+
+
+
+
+
+
+
+//////// INITIAL CONDITION WHERE BIO TEXT IS HIDDEN ////
 
 $('.bio_text').hide();
 
@@ -8,6 +44,13 @@ $('.bio_text').hide();
 
 
 
+//////// CLICK LISTENERS ////////
+
+$('#headerClick').on('click', navigateHome);
+
+$openBtn.on('click', openModal);
+
+$closeBtn.on('click', closeModal);
 
 
 
