@@ -29,14 +29,15 @@ h2 {
     background: rgb(73, 93, 78, .5);
     width: 100%;
     height: 105px;
-    margin-left: 0;
-    /* border: 1px solid red; */
+    border-radius: 25px;
+
   }
 
   .headerfg {
     background: ivory;
     width: 99%;
     height: 100px;
+    border-radius: 25px;
     z-index: +1;
   }
 
@@ -68,6 +69,7 @@ h2 {
     background: rgb(73, 93, 78, .5);
     width: 150px;
     height: 400px;
+    border-radius: 25px;
 
   }
 
@@ -75,6 +77,7 @@ h2 {
     background: ivory;
     width: 145px;
     height: 395px;
+    border-radius: 25px;
 
   }
 
@@ -98,7 +101,7 @@ h2 {
 
 .main_links {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 
@@ -110,6 +113,7 @@ h2 {
     background: rgb(73, 93, 78, .5);
     width: 505px;
     height: 55px;
+    border-radius: 25px;
 
   }
 
@@ -117,6 +121,7 @@ h2 {
     background: ivory;
     width: 500px;
     height: 50px;
+    border-radius: 25px;
 
   }
 
@@ -128,6 +133,7 @@ h2 {
     background: rgb(73, 93, 78, .5);
     width: 505px;
     height: 55px;
+    border-radius: 25px;
 
   }
 
@@ -135,6 +141,7 @@ h2 {
     background: ivory;
     width: 500px;
     height: 50px;
+    border-radius: 25px;
 
   }
 
@@ -146,6 +153,7 @@ h2 {
       background: rgb(73, 93, 78, .5);
       width: 505px;
       height: 55px;
+      border-radius: 25px;
 
     }
 
@@ -153,6 +161,7 @@ h2 {
       background: ivory;
       width: 500px;
       height: 50px;
+      border-radius: 25px;
 
     }
 
@@ -181,6 +190,7 @@ h2 {
    width: 100%;
    height: 35px;
    margin-left: 0;
+   border-radius: 25px;
 
   }
 
@@ -188,5 +198,6 @@ h2 {
    background: ivory;
    width: 99%;
    height: 30px;
+   border-radius: 25px;
 
   }
