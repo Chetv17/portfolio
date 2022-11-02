@@ -26,7 +26,14 @@ h2 {
 
 a {
   color: #2b1f05;
-  text-decoration: none;  
+  text-decoration: none;
+}
+a:hover {
+  color: #FBFF4F;
+}
+
+h3:hover {
+  color: #FBFF4F;
 }
 
   .headerbg {
