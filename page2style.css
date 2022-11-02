@@ -6,8 +6,10 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-  background-image: linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background-blend-mode: darken;
   color: #2b1f05;
+
 
 }
 
@@ -130,14 +132,18 @@ a:hover {
 
   }
 
-h3 {
-  text-align: center;
-
-}
 
 #contactList {
-
+  text-align: center;
   list-style: none;
+  font-weight: bold;
+}
+
+#modalh2 {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40px;
+  color: #2b1f05;
 }
 
 #contactModal {
@@ -152,7 +158,7 @@ h3 {
 	display: none;
 }
   #modalContent {
-    background-color: white;
+    background-image: url('modalsign.jpg');
   	height: 350px;
   	width: 550px;
   	border-radius: 2px;
@@ -161,6 +167,14 @@ h3 {
 
   }
 
+#credit {
+  color: ivory;
+  text-align: right;
+}
+
+.name {
+  color: ivory;
+}
 
   /* MEDIA QUERY RESPONSIVE DESIGN */
 
