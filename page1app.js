@@ -5,6 +5,10 @@ $(() => {
   const $modal = $('#contactModal');
   const $closeBtn = $('#close');
 
+  const $openCarousel = $('#openCarousel');
+  const $carousel = $('#carouselModal');
+  const $closeCarousel = $('#closeCarousel');
+
 
 
 
@@ -36,6 +40,13 @@ const closeModal = () => {
 $modal.css('display', 'none');
 }
 
+const openCarousel = () => {
+$carousel.css('display', 'block');
+}
+
+const closeCarousel = () => {
+$carousel.css('display', 'none');
+}
 
 
 
@@ -51,6 +62,8 @@ $('#resumeClick').on('click', navigateResume);
 $('#projectsClick').on('click', navigateProjects);
 $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
+$openCarousel.on('click', openCarousel);
+$closeCarousel.on('click', closeCarousel);
 
 ///////// HOVER-OVER LISTENERS //////////
 

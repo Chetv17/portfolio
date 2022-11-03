@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Chester Vincent's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="page1style.css">
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -42,7 +43,9 @@
 
      <div class='photolinks'>
         <div class='carouselbg'>
-        <div class='carouselfg'></div>
+          <a id='openCarousel' href='#'>
+        <div class='carouselfg'><img src='wildflowers.jpg'></div>
+          </a>
      </div>
 
 
@@ -89,6 +92,33 @@
         </div>
      </div>
 
+<!-- CAROUSEL MODAL -->
+
+<div id='carouselModal'>
+  <div id='carouselContent'>
+   <a id='closeCarousel' href='#'>Close</a>
+    <div class='previousbtn'>
+      <span class='lnr lnr-arrow-left-circle'></span>
+    </div>
+
+      <div class='images'>
+        <img src='wildflowers.jpg' />
+        <img src='bison.jpg' />
+        <img src='nightsky.jpg' />
+      </div>
+
+    <div class='nextbtn'>
+      <span class='lnr lnr-arrow-right-circle'></span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- CONTACT MODAL -->
 
      <div id='contactModal'>
        <div id='modalContent'>
