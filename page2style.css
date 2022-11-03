@@ -76,13 +76,13 @@ a:hover {
 
     background: rgb(73, 93, 78, .5);
     width: 100%;
-    height: 600px;
+    height: 300px;
     border-radius: 25px;
   }
 
   .biofg {
    width: 100%;
-   height: 500px;
+   height: 200px;
    z-index: +1;
  }
 
@@ -92,6 +92,27 @@ a:hover {
    text-shadow: 1px 1px 2px #000000;
 
  }
+ .photos {
+   display: flex;
+ }
+
+
+.image {
+  position: relative;
+  left: 100px;
+  margin-top: 50px;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+#photocredit {
+  font-size: 6px;
+  position: relative;
+}
 
 
   /* FOOTER SECTION */
@@ -124,8 +145,8 @@ a:hover {
 
 
 .footer {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
   .footerbg {
@@ -193,13 +214,37 @@ a:hover {
 
   /* MEDIA QUERY RESPONSIVE DESIGN */
 
-    @media (max-width: 693px) {
+    @media (max-width: 826px) {
       .middle {
         display: flex;
         flex-direction: column;
       }
       .nav {
       padding-right: 10px;
+    }
+
+    .image {
+      left: 45px;
+    }
+
+    .bio {
+
+    }
+
+      .biobg {
+        height: 550px;
+    }
+
+      .biofg {
+        height: 550px;
+
+    }
+
+     .bio_text {
+       margin-left: 5px;
+       margin-right: 5px;
+
+
     }
 
   }
