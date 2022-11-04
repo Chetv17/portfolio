@@ -11,8 +11,8 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FF750F), url('wallpaper.jpg');
-  background-blend-mode: darken;
+  background: url('trees.jpg'), linear-gradient(#495d4e, #fff9f9, #ffffff);
+  background-blend-mode: normal;
   font-family: NationalPark;
   text-shadow: 1px 1px 2px #000000;
   color: #f0f0f2;
@@ -68,7 +68,13 @@ a:hover {
 
 /* BODY SECTION OF PAGE */
 
+h2 {
+  text-shadow: 1px 1px 2px #000000;
+}
 
+.resumeMain {
+  padding-bottom: 700px;
+}
 
 
 
