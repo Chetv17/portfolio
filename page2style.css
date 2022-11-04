@@ -11,7 +11,7 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FBFF4F);
+  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FF750F);
   background-blend-mode: darken;
   font-family: NationalPark;
   text-shadow: 1px 1px 2px #000000;
