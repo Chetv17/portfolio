@@ -72,6 +72,12 @@ $('.headerfg').hover(function() {
       $('.headerbg').css('background-color', 'rgb(73, 93, 78, .1)')
     });
 
+$('.biofg').hover(function() {
+      $('.biobg').css('background-color', 'rgb(225, 225, 225, .1)');
+    }, function() {
+        $('.biobg').css('background-color', 'rgb(73, 93, 78, .1)')
+    });
+
 $('.footerfg').hover(function() {
       $('.footerbg').css('background-color', 'rgb(225, 225, 225, .1)');
     }, function() {
