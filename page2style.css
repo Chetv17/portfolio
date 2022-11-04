@@ -12,7 +12,7 @@
 
 body {
   background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FF750F);
-  background-blend-mode: darken;
+  background-blend-mode: luminosity;
   font-family: NationalPark;
   text-shadow: 1px 1px 2px #000000;
   color: #f0f0f2;
@@ -96,7 +96,7 @@ a:hover {
    display: flex;
  }
 
-
+/*
 .image {
   position: relative;
   left: 100px;
@@ -112,6 +112,14 @@ img {
 #photocredit {
   font-size: 6px;
   position: relative;
+} */
+
+
+/* SPACE INSTEAD OF PHOTO */
+
+.space {
+  width: 400px;
+  height: 412px;
 }
 
 

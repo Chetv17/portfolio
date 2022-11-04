@@ -8,7 +8,7 @@
 /* ALL FOREGROUND ITEMS! */
 
 body {
-  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #FF750F);
+  background: url('trees.jpg'), linear-gradient(#495d4e, #83A88D, #f0f0f2);
   background-blend-mode: darken;
   font-family: NationalPark;
   color: #f0f0f2;
@@ -126,6 +126,9 @@ h3:hover {
   }
 
   .carouselfg {
+    position: relative;
+    top: 1px;
+    left: 1px;
     width: 500px;
     height: 262px;
     border-radius: 15px;
