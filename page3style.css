@@ -16,7 +16,7 @@ body {
   font-family: NationalPark;
   text-shadow: 1px 1px 2px #000000;
   color: #f0f0f2;
-
+  overflow: auto;
 
 }
 
@@ -28,16 +28,20 @@ main {
 /* HEADER SECTION OF PAGE */
 
 h1 {
-  text-align: center;
   font-size: 50px;
+  text-shadow: 1px 1px 2px #000000;
+  text-align: center;
   padding-top: 5px;
-  font-weight: 900;
+  margin-bottom: 0;
 }
 
 h2 {
-  text-align: center;
-  color: #f0f0f2;
+  font-size: 20px;
   text-shadow: 1px 1px 2px #000000;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+
 }
 
 a {
@@ -48,6 +52,10 @@ a {
 
 a:hover {
   color: #FBFF4F;
+}
+
+.header {
+  position: relative;
 }
 
   .headerbg {
@@ -68,28 +76,23 @@ a:hover {
 
 /* BODY SECTION OF PAGE */
 
-.resume_h2 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  text-shadow: 1px 1px 2px #000000;
-}
+
 
 .resumeMain {
   display: flex;
-
-  padding-bottom: 700px;
+  padding-top: 30px;
+  margin-bottom: 700px;
 }
 
 /* SCHOOLS DROP DOWN */
 
 .educationMain {
   position: absolute;
-  left: 150px;
+  left: 25%;
 }
 
 .schools_bg {
-
+  position: absolute;
   background: rgb(73, 93, 78, .1);
   border-radius: 15px;
   width: 120px;
@@ -97,7 +100,7 @@ a:hover {
 
 }
 .schools_fg {
-
+  position: absolute;
   background: rgb(107,140,73,.1);
   border-radius: 15px;
   text-align: center;
@@ -110,9 +113,9 @@ a:hover {
   display: none;
   background: rgb(73, 93, 78, .1);
   border-radius: 15px;
-  position: relative;
+  position: absolute;
   left: -92px;
-  margin-top: 20px;
+  margin-top: 80px;
   width: 400px;
   height: 400px;
 }
@@ -125,12 +128,12 @@ a:hover {
 /* JOBS DROP DOWN */
 
 .jobsMain {
-  position: absolute;
-  left: 600px;
+  position: relative;
+  left: 65%;
 }
 
 .jobs_bg {
-
+  position: absolute;
   background: rgb(73, 93, 78, .1);
   border-radius: 15px;
   width: 120px;
@@ -138,7 +141,7 @@ a:hover {
 
 }
 .jobs_fg {
-
+  position: absolute;
   background: rgb(107,140,73,.1);
   border-radius: 15px;
   text-align: center;
@@ -151,9 +154,9 @@ a:hover {
   display: none;
   background: rgb(73, 93, 78, .1);
   border-radius: 15px;
-  position: relative;
-  left: -92px;
-  margin-top: 20px;
+  position: absolute;
+  left: -120px;
+  margin-top: 80px;
   width: 400px;
   height: 400px;
 }
@@ -162,15 +165,6 @@ a:hover {
   color: #FBFF4F;
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER SECTION */
@@ -276,4 +270,21 @@ color: ivory;
 
   .nav {
   padding-right: 10px;
+}
+
+.educationMain {
+  position: absolute;
+  left: 100px;
+}
+.dropdownContent {
+  position: absolute;
+  left: -80px;
+}
+.jobsMain {
+  position: absolute;
+  left: 230px;
+}
+.jobsDropdownContent {
+  position: absolute;
+  left: -210px;
 }
