@@ -68,13 +68,102 @@ a:hover {
 
 /* BODY SECTION OF PAGE */
 
-h2 {
+.resume_h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   text-shadow: 1px 1px 2px #000000;
 }
 
 .resumeMain {
+  display: flex;
+
   padding-bottom: 700px;
 }
+
+/* SCHOOLS DROP DOWN */
+
+.educationMain {
+  position: absolute;
+  left: 150px;
+}
+
+.schools_bg {
+
+  background: rgb(73, 93, 78, .1);
+  border-radius: 15px;
+  width: 120px;
+  heigth: 100px;
+
+}
+.schools_fg {
+
+  background: rgb(107,140,73,.1);
+  border-radius: 15px;
+  text-align: center;
+  width: 120px;
+  heigth: 100px;
+
+}
+
+.dropdownContent {
+  display: none;
+  background: rgb(73, 93, 78, .1);
+  border-radius: 15px;
+  position: relative;
+  left: -92px;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+}
+.addlist {
+  list-style: none;
+  color: #FBFF4F;
+
+}
+
+/* JOBS DROP DOWN */
+
+.jobsMain {
+  position: absolute;
+  left: 600px;
+}
+
+.jobs_bg {
+
+  background: rgb(73, 93, 78, .1);
+  border-radius: 15px;
+  width: 120px;
+  heigth: 100px;
+
+}
+.jobs_fg {
+
+  background: rgb(107,140,73,.1);
+  border-radius: 15px;
+  text-align: center;
+  width: 120px;
+  heigth: 100px;
+
+}
+
+.jobsDropdownContent {
+  display: none;
+  background: rgb(73, 93, 78, .1);
+  border-radius: 15px;
+  position: relative;
+  left: -92px;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+}
+.addlist_jobs {
+  list-style: none;
+  color: #FBFF4F;
+
+}
+
+
 
 
 
