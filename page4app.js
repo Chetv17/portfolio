@@ -36,8 +36,9 @@ const closeModal = () => {
 }
 
 const openCabinCarousel = () => {
-$('.door').hide();
+$('.door').remove();
 $cabinCarousel.css('display', 'block');
+$('.storytext').text('have you been here before?').css('display', 'block');
 }
 
 const closeCabinCarousel = () => {
@@ -46,18 +47,35 @@ $cabinCarousel.css('display', 'none');
 }
 
 const openDrawer = () => {
-  $('#potion').css('display', 'block');
+  $('#contents').css('display', 'block');
+  $('.storytext').text('a small vial').css('display', 'block');
 }
 
 const addPotion = () => {
-  $
+  cabinObjects.push('potion');
+  $('#potion').hide(2000);
 }
 
+const revealOrb = () => {
+  cabinObjects.push('dizzy');
+  $('#blueOrb').show(1000);
+  $('.storytext').text('you hear a noise upstairs').css('display', 'block');
 
+}
+
+const revealSkeleton = () => {
+  $('#skel').css('display', 'block');
+  $('#skeleton').show(3000);
+  $('.storytext').text('.................').css('display', 'block');
+  $('#previousbtn').hide();
+  $('#nextbtn').hide();
+}
 
 //////// INITIAL CONDITION WHERE BIO TEXT IS HIDDEN ////
 
 $('.bio_text').hide();
+$('#blueOrb').hide();
+$('#skeleton').hide();
 
 
 
@@ -114,19 +132,70 @@ $('#nextbtn').on('click', () => {
 
 $('#previousbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
-  if (currentImg === 0) {
+  if (currentImg === 0 && cabinObjects.includes('potion') === true) {
     $('#fireplace').css('display', 'block');
+    $('.storytext').text('throw the vial in the fireplace').css('display', 'block');
     } else {
       $('#fireplace').css('display', 'none');
+      $('.storytext').text('there is a presence...').css('display', 'block');
+
     }
 })
 
 $('#nextbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
-  if (currentImg === 0) {
+  if (currentImg === 0 && cabinObjects.includes('potion') === true) {
     $('#fireplace').css('display', 'block');
+    $('.storytext').text('throw the vial in the fireplace').css('display', 'block');
     } else {
      $('#fireplace').css('display', 'none');
+     $('.storytext').text('there is no noise...').css('display', 'block');
+    }
+})
+
+//// blue orb
+
+$('#previousbtn').on('click', () => {
+  $('.cabin_images').children().eq(currentImg);
+  if (currentImg === 0 && cabinObjects.includes('dizzy') === true) {
+    $('#blueOrb').show();
+    } else {
+      $('#blueOrb').hide();
+
+    }
+})
+
+$('#nextbtn').on('click', () => {
+  $('.cabin_images').children().eq(currentImg);
+  if (currentImg === 0 && cabinObjects.includes('dizzy') === true) {
+    $('#blueOrb').show();
+    } else {
+      $('#blueOrb').hide();
+
+    }
+})
+
+//// lamp
+
+$('#previousbtn').on('click', () => {
+  $('.cabin_images').children().eq(currentImg);
+  if (currentImg === 1 && cabinObjects.includes('dizzy') === true) {
+    $('.storytext').text('you are drawn to the lamp...').css('display', 'block');
+    $('#lamp').css('display', 'block');
+    } else {
+      $('#lamp').css('display', 'none');
+
+    }
+})
+
+$('#nextbtn').on('click', () => {
+  $('.cabin_images').children().eq(currentImg);
+  if (currentImg === 1 && cabinObjects.includes('dizzy') === true) {
+    $('#lamp').css('display', 'block');
+    $('.storytext').text('you are drawn to the lamp...').css('display', 'block');
+    } else {
+     $('#lamp').css('display', 'none');
+
     }
 })
 
@@ -141,8 +210,9 @@ $closeBtn.on('click', closeModal);
 $('#doorClick').on('click', openCabinCarousel);
 $closeCabinCarousel.on('click', closeCabinCarousel);
 $('#drawer').on('click', openDrawer);
-
-$('#potion').on('click', addPotion);
+$('#contents').on('click', addPotion);
+$('#fireplace').on('click', revealOrb);
+$('#lamp').on('click', revealSkeleton);
 
 
 ////////// HOVER OVER LISTENERS /////////
@@ -162,10 +232,16 @@ $('.footerfg').hover(function() {
       $('.footerbg').css('background-color', 'rgb(73, 93, 78, .1)')
     });
 
-    $('.cabinCarouselfg').hover(function() {
-           $('.cabinCarouselbg').css('background-color', 'rgb(225, 225, 225, .8)');
-        }, function() {
-           $('.cabinCarouselbg').css('background-color', 'rgb(73, 93, 78, .1)')
-        });
+$('.cabinCarouselfg').hover(function() {
+      $('.cabinCarouselbg').css('background-color', 'rgb(225, 225, 225, .8)');
+    }, function() {
+       $('.cabinCarouselbg').css('background-color', 'rgb(73, 93, 78, .1)')
+    });
+
+$('.cabinCarouselfg').hover(function() {
+      $('.storytext').css('display', 'block');
+    }, function() {
+      $('.storytext').css('display', 'none')
+    });
 
 });
