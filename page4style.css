@@ -81,17 +81,60 @@ a:hover {
   }
 
     .door {
+      display: block;
       position: absolute;
-      top: 120px;
-      left: 300px;
+      top: 132px;
+      left: 275px;
       width: 50px;
       height: 80px;
+      /* border: 2px solid red; */
+      z-index: 2;
+      cursor: zoom-in;
+    }
+
+    #drawer {
+      display: none;
+      position: absolute;
+      top: 385px;
+      left: 140px;
+      width: 50px;
+      height: 20px;
       border: 2px solid red;
+      z-index: 2;
+      cursor: zoom-in;
+    }
+
+    #potion {
+      display: none;
+    }
+
+  #fireplace {
+    display: none;
+    position: absolute;
+    top: 435px;
+    left: 145px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    border: 2px solid red;
+    cursor: zoom-in;
+  }
+
+    #fireplaceContent {
+      display: none;
+      position: absolute;
+      background: rgb(43, 188, 253, .4);
+      background-blend-mode: color-dodge;
+      top: 435px;
+      left: 145px;
+      width: 50px;
+      height: 50px;
+      border-radius: 70px;
       z-index: 2;
     }
 
     .cabinCarouselbg {
-      background: rgb(73, 93, 78, .9);
+      background: rgb(73, 93, 78, .1);
       position: relative;
       left: 170px;
       width: 502px;
@@ -115,15 +158,15 @@ a:hover {
   }
 
 
-  #cabincarousel {
+  #cabinCarousel {
     display: flex;
     justify-content: space-around;
     background-color: rgb(73, 93, 78, .9);
     position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 800px;
-    height: 540px;
+    top: 20%;
+    left: 21%;
+    width: 500px;
+    height: 600px;
     border-radius: 15px;
     z-index: 1;
     display: none;
@@ -131,13 +174,23 @@ a:hover {
     #cabinContent {
       height: 100%;
       width: 100%;
+      position: absolute;
+      left: -17px;
+      bottom: 17px;
       border-radius: 15px;
+  }
+
+  #kitchen {
+    width: 100%;
+    height: auto;
+    position:relative;
+    top: 100px;
   }
 
   #previousbtn {
     position: relative;
-    left: 15px;
-    top: 250px;
+    left: 23px;
+    top: 295px;
   }
 
   #previousbtn:hover {
@@ -147,7 +200,7 @@ a:hover {
 
   #nextbtn {
     position: relative;
-    left: 770px;
+    left: 495px;
     top: -259px;
   }
 
@@ -201,6 +254,7 @@ a:hover {
 
   button:hover {
     color: #FBFF4F;
+    cursor: pointer;
   }
 
   #foot_nav {

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Projects</title>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="page4style.css">
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -27,28 +28,35 @@
 
     <div class='game'>
       <div class='cabinGame'>
-        <div class='door'>
-          <a id='openCabinCarousel' href='#'>
-            </a>
          <div class='cabinCarouselbg'>
+           <div id='doorClick' class='door'>
+            </div>
           <div class='cabinCarouselfg'>
            <img src='cabin.jpg'>
          </div>
-        </div>   
+        </div>
 
       </div>
 
-      <div id='cabincarousel'>
+      <div id='cabinCarousel'>
         <div id='cabinContent'>
-         <a id='closeCabinCarousel' href='#'>Close</a>
+         <a id='closeCabinCarousel' href='#'>Leave</a>
           <div id='previousbtn'>
             <span class='lnr lnr-arrow-left-circle'></span>
           </div>
 
+          <div id='drawer'>
+            <img id='potion' src='potion.jpg' />
+           </div>
+           <div id='fireplace'>
+             <div id='fireplaceContent'>
+               </div>
+            </div>
+
             <div class='cabin_images'>
               <img src='cabin1.jpg' />
               <img src='cabin2.jpg' />
-              <img src='cabin3.jpg' />
+              <img id='kitchen' src='cabin3.jpg' />
 
 
             </div>
