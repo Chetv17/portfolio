@@ -5,11 +5,13 @@ const cabinObjects = ['map to cabin'];
 
 ///////// CLICK FUNCTIONS /////////
 
+
+////// contact modal
 const $openBtn = $('#openModal');
 const $modal = $('#contactModal');
 const $closeBtn = $('#close');
 
-
+//////// cabin game
 const $openCabinCarousel = $('#openCabinCarousel');
 const $cabinCarousel = $('#cabinCarousel');
 const $closeCabinCarousel = $('#closeCabinCarousel');
@@ -18,22 +20,15 @@ let numberOfImages = $('.cabin_images').children().length - 1;
 let currentImg = 0;
 
 
-
-    const navigateHome = () => {
-      alert('works!')
-    }
-
-
-
-
-
-    const openModal = () => {
-  $modal.css('display', 'block');
+/////// CONTACT MODAL
+const openModal = () => {
+$modal.css('display', 'block');
 }
-
 const closeModal = () => {
   $modal.css('display', 'none');
 }
+
+///////// CABIN GAME ///////////////
 
 const openCabinCarousel = () => {
 $('.door').remove();
@@ -59,7 +54,7 @@ const addPotion = () => {
 const revealOrb = () => {
   cabinObjects.push('dizzy');
   $('#blueOrb').show(1000);
-  $('.storytext').text('you hear a noise upstairs').css('display', 'block');
+  $('.storytext').text('a blue orb... you hear a noise upstairs...').css('display', 'block');
 
 }
 
@@ -77,11 +72,7 @@ $('.bio_text').hide();
 $('#blueOrb').hide();
 $('#skeleton').hide();
 
-
-
-///////// CABIN GAME ///////////////
-
-////// arrow buttons to scroll photo carousel ///
+////// click function to make arrow buttons scroll images ///
 
 $('#previousbtn').on('click', () => {
     $('.cabin_images').children().eq(currentImg).css('display', 'none');
@@ -105,11 +96,10 @@ $('#nextbtn').on('click', () => {
 
 })
 
-///// use arrow buttons to make secrets appear in the cabin //////
+///// click functions that let arrow buttons make text/objects appear in game
 
-//previous
 
-///drawer
+///drawer appears in kitchen
 $('#previousbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
   if (currentImg === 2) {
@@ -128,7 +118,7 @@ $('#nextbtn').on('click', () => {
     }
 })
 
-/// fireplace
+/// fireplace appears in livingroom
 
 $('#previousbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
@@ -153,7 +143,7 @@ $('#nextbtn').on('click', () => {
     }
 })
 
-//// blue orb
+//// blue orb appears in fireplace
 
 $('#previousbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
@@ -175,7 +165,7 @@ $('#nextbtn').on('click', () => {
     }
 })
 
-//// lamp
+//// lamp appears in bedroom
 
 $('#previousbtn').on('click', () => {
   $('.cabin_images').children().eq(currentImg);
@@ -200,11 +190,8 @@ $('#nextbtn').on('click', () => {
 })
 
 
-
-
 //////// CLICK LISTENERS ////////
 
-$('#headerClick').on('click', navigateHome);
 $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 $('#doorClick').on('click', openCabinCarousel);
@@ -214,10 +201,7 @@ $('#contents').on('click', addPotion);
 $('#fireplace').on('click', revealOrb);
 $('#lamp').on('click', revealSkeleton);
 
-
 ////////// HOVER OVER LISTENERS /////////
-
-
 
 ///BACKGROUND EFFECTS
 $('.headerfg').hover(function() {

@@ -12,31 +12,6 @@ $(() => {
   let numberOfImages = $('.images').children().length - 1;
   let currentImg = 0;
 
-
-
-
-
-
-
-
-
-
-
-///////// CLICK FUNCTIONS /////////
-
-  const navigateHome = () => {
-    alert('works!')
-  }
-  const navigateAboutMe = () => {
-    alert('works!')
-  }
-  const navigateResume = () => {
-    alert('works!')
-  }
-  const navigateProjects = () => {
-    alert('works!')
-  }
-
   ////// CAROUSEL MODAL ///////
 
   $('#previousbtn').on('click', () => {
@@ -59,36 +34,24 @@ $(() => {
      $('.images').children().eq(currentImg).css('display', 'block');
   })
 
-///////////////
-
+////// CONTACT MODAL //
 const openModal = () => {
 $modal.css('display', 'block');
 }
-
 const closeModal = () => {
 $modal.css('display', 'none');
 }
 
+//// CAROUSEL MODAL //
 const openCarousel = () => {
 $carousel.css('display', 'block');
 }
-
 const closeCarousel = () => {
 $carousel.css('display', 'none');
 }
 
-
-
-
-
-
-
 //////// CLICK LISTENERS ////////
 
-$('#headerClick').on('click', navigateHome);
-$('#aboutMeClick').on('click', navigateAboutMe);
-$('#resumeClick').on('click', navigateResume);
-$('#projectsClick').on('click', navigateProjects);
 $openBtn.on('click', openModal);
 $closeBtn.on('click', closeModal);
 $openCarousel.on('click', openCarousel);

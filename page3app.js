@@ -80,31 +80,14 @@ const jobList = () => {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ///////// CLICK FUNCTIONS /////////
 
 const $openBtn = $('#openModal');
 const $modal = $('#contactModal');
 const $closeBtn = $('#close');
 
-    const navigateHome = () => {
-      alert('works!')
-    }
-
-  const openModal = () => {
-  $modal.css('display', 'block');
+const openModal = () => {
+$modal.css('display', 'block');
 }
 
 const closeModal = () => {
@@ -113,12 +96,8 @@ const closeModal = () => {
 
 //////// CLICK LISTENERS ////////
 
-$('#headerClick').on('click', navigateHome);
-
 $openBtn.on('click', openModal);
-
 $closeBtn.on('click', closeModal);
-
 
 ////////// HOVER OVER LISTENERS /////////
 
