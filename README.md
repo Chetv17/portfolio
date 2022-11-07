@@ -1,6 +1,9 @@
 # portfolio
 Chester Vincent's portfolio website
 
+link:
+https://imaginative-kashata-b4663e.netlify.app/index.html
+
 This portfolio is the assignment for Project Week #1 at General Assembly.
 
 I will be using the skills and concepts from Unit 1 to build a personal portfolio.
@@ -38,7 +41,7 @@ So the first image: only the door was clickable, to simulate entering the cabin.
 
 Once clicked the drawer reveals a potion vial. If the player clicks the vial, then it is added to the players items array -- and the drawer button and potion image are removed and no longer 'clickable'.
 
-This act, however, activates the fireplace in the living room! And if the player follows the instructions, the next item that gets activated is the lamp in the bedroom -- and if that is clicked... a trippy surprise awaits! 
+This act, however, activates the fireplace in the living room! And if the player follows the instructions, the next item that gets activated is the lamp in the bedroom -- and if that is clicked... a trippy surprise awaits!
 
 All of these effects required using my new knowledge of jQuery and Javascript, using hide() and show animations, and finally, precise box placements with css!
 
